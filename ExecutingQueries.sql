@@ -15,11 +15,11 @@ FROM newCleaning
 SELECT DISTINCT(CourseProvider) AS distinct_values
 FROM newCleaning
 
--- Case fuction setting as not reliable, some reliable, and very reliable 
+--Case fuction setting as not reliable, some reliable, and very reliable 
 SELECT TotalReviews,
 CASE 
-WHEN TotalReviews <= 16 THEN 'Not reliable course'
-WHEN TotalReviews <= 455 THEN 'Some reliable course'
+  WHEN TotalReviews <= 16 THEN 'Not reliable course'
+  WHEN TotalReviews <= 455 THEN 'Some reliable course'
 ELSE 'Very reliable course'
 END AS CaseStatement
 FROM newCleaning
@@ -60,5 +60,5 @@ HAVING CourseProvider = 'Ian LittleJohn'
 
 -- Finding the CourseProviders with the pattern son 
 SELECT CourseProvider
-FROM newCleaning
+FROM NewCleaning
 WHERE CourseProvider LIKE '%son%'

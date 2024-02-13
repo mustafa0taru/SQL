@@ -1,7 +1,5 @@
 
 ```
-This project was created for understanding the basic
-cleaning processes in SQL, with some important functions in result of exploring the dataset,
-get duplicate values etc, converting variables in other formats etc.
+This project was created to understand the basic cleaning processes in SQL, with some important functions due to exploring the dataset, getting duplicate values, converting variables in other formats, etc.
    ``` 
  
